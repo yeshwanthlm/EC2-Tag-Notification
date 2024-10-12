@@ -10,6 +10,8 @@ To achieve automated notifications when EC2 instances are missing a specific tag
 2. Lambda Function: Will be invoked by the event to check for instances that do not have the required tag or its value is missing.
 3. SNS Topic: Sends an email notification when such instances are found.
 
+![Screenshot 2024-10-12 at 10 51 14 AM](https://github.com/user-attachments/assets/1b402673-b1c0-47cf-8c99-02b3c469de43)
+
 ## Steps
 1. Create an SNS Topic for Email Notifications
   * Go to the Amazon SNS Console and create a topic (e.g., MissingTagNotifications).
@@ -64,7 +66,6 @@ def lambda_handler(event, context):
     }
 
 ```
-
 
 3. Configure Lambda Environment Variables
   * After creating the Lambda function, set the following environment variable:
