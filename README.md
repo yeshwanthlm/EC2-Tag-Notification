@@ -82,3 +82,17 @@ def lambda_handler(event, context):
 5. Test the Solution
 You can either manually run the Lambda function from the console to verify that it is checking for instances without the tag or wait for the CloudWatch rule to trigger the Lambda function based on your schedule.
 If any instances are missing the required Environment tag or its value, you will receive an email notification listing the instance IDs.
+
+### YouTube Video: Automate EC2 Tag Monitoring with AWS EventBridge and Lambda | Real-Time Notifications Setup
+
+In this video, we walk you through setting up an automated solution to monitor your EC2 instances and ensure they have the required tags (like Environment). Using AWS EventBridge, Lambda, and SNS, we demonstrate how to get notified via email if any EC2 instance is missing a specific tag. Learn how to create a scheduled rule that runs every 5 minutes and keeps your infrastructure compliant!
+
+What you’ll learn:
+
+1. Setting up an AWS Lambda function to check EC2 instances for missing tags.
+2. Scheduling automatic checks using AWS EventBridge with a cron expression.
+3. Configuring Amazon SNS to send email notifications.
+4. Ensuring proper tagging for better cost and resource management in AWS.
+5. Stay tuned for this hands-on tutorial and simplify your AWS management!
+   
+#AWS #CloudAutomation #EC2Monitoring #LambdaFunction #EventBridge #TagCompliance #CloudWatch #DevOps #CloudComputing #AWSTutorial #CloudInfrastructure
